@@ -1,0 +1,27 @@
+/* --------Mobile view--------- */
+@media (max-width: 770px) {
+    button {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 1.5rem;
+        transition: all 0.3s;
+        width: 15rem;
+        cursor: pointer;
+        margin: 0.6rem;
+        text-shadow: rgb(0, 0, 0)0px 3px 8px;
+      }
+      .imge{
+        width: 70%;
+        max-height: 15rem;
+        height: auto;
+        margin: 1.3rem 0;
+    }
+    #WelcomeScreen h2{
+        font-family: 'Ubuntu', sans-serif;   
+        font-size: 1.5rem;
+    }
+    #WelcomeScreen h3{
+        font-family: 'Poppins', sans-serif; 
+        font-size: 1.5rem;
+    }
+}
