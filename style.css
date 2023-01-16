@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark: #000;
+    --background: #fff;
+}
+html{
+    font-size: 62.5%;
+    /* font-family: 'Poppins', sans-serif; */
+    /* 1 rem = 10px */
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #491579;
+}
+
+main{
+    width: 50vh;
+    text-align: center;
+    background-color: var(--background);
+    margin: 2rem;
+    border-width: .8rem;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.imge{
+    width: 90%;
+    max-height: 22rem;
+    height: auto;
+    margin: 1.5rem 0;
+}
+
+#WelcomeScreen h2{
+    font-family: 'Ubuntu', sans-serif;   
+    font-size: 2rem;
+}
+#WelcomeScreen h3{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.8rem;
+}
+
+#Eattempt h3{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 1.8rem;
+}
+
+p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif; 
+}
+.btn-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 4rem;
+}
+button {
+    display: inline-block;
+    border-radius: 5px;
+    background-image: linear-gradient( 45deg, rgb(0, 204, 255),#455eb5, #a400f0);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem;
+    transition: all 0.3s;
+    width: 20rem;
+    cursor: pointer;
+    margin: 0.8rem;
+    text-shadow: rgb(0, 0, 0)0px 3px 8px;
+  }
+
+button:hover{
+    background-image: linear-gradient( 45deg, rgb(86, 211, 243),#5c72bf, rgb(190, 61, 250));
+    transition-duration: 0.3s;
+}
+
+/* Our Game Area */
+
+#Eattempt{
+    /* height: 50vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    border: 0.5rem solid lightgray;
+    background: transparent;
+    margin: 4rem 0;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#inputBox{
+    width: 60%;
+}
+.status{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.info{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+span{
+    font-size: 1.7rem;
+    color: #ff0000;
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Number Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css" class="css">
+
+</head>
+<body onload="init()">
+    <header>
+
+    </header>
+    <main>
+        <section id="WelcomeScreen">
+            <h2>Guess The Random Number Between 1-100</h2>
+            <img class="imge" src="game.svg" alt="gameimg">
+            <div class="perform-section">
+                <h3>Select The Difficulty</h3>
+                <div class="btn-wrapper">
+                    <button onclick="easyStart()" class="btn">Easy: 10 Attempts</button>
+                    <button onclick="hardStart()" class="btn">Hard: 5 Attempts</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- our actual game area -->
+        <section id="Eattempt">
+            <button class="btn" id="mybtn" onclick="newGame()">New Game</button>
+            <h3 id="guess-heading">Your Guess</h3>
+            <input type="number" id="inputBox" min="1" max="100" placeholder="Enter Your Guess" onchange="compareGuess()"/>
+            <div class="status">
+                <div class="info">
+                    <p>Number of Pervious Attempts</p>
+                    <span id="attempts"> 0 </span>
+                </div>
+                <div class="info">
+                    <p>Number of Pervious Guesses</p>
+                    <span id="guess"> 0 </span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
