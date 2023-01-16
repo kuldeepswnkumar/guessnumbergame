@@ -1,4 +1,6 @@
 /* --------Mobile view--------- */
+/* Welcome Screen */
+
 @media (max-width: 770px) {
     button {
         text-align: center;
@@ -24,4 +26,31 @@
         font-family: 'Poppins', sans-serif; 
         font-size: 1.5rem;
     }
+
+
+    /* Input Screen */
+    #Eattempt h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 1.5rem;
+    }
+    input{
+        margin: 2rem 0;
+        padding: 1.5rem ;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+    #inputBox{
+        width: 80%;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    span{
+        font-size: 1.5rem;
+    }
+    .btn-wrapper{
+        margin: 1rem 3rem;
+    }
+
 }
